@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Protest+Revolution&display=swap');
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #9b9b82;
+}
+
+.container {
+  width: 100%;
+}
+
+h2 {
+  font-size: 84px;
+  padding-left: 42px;
+  margin-bottom: 0px;
+  color: #55551a;
+}
+
+h3 {
+  font-size: 74px;
+  padding-top: 50px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 100;
+  color: #c8c8c8;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.topbar {
+  background-color: #040404;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  width: 420px;
+  height: 45px;
+  transform: translateX(-50%);
+  margin: 20px;
+  border-radius: 24px;
+  padding: 20px;
+  font-weight: 50;
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(10, 10, 10, 0.2);
+  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.topbar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.topbar ul li {
+  display: inline-block;
+  /* Display side by side */
+  padding: 4px 0;
+  list-style-type: none;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.topbar ul li:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.topbar ul li a {
+  text-decoration: none;
+  color: #b7b6af;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.topbar ul li a:hover {
+  color: #d2cccc;
+}
+
+.myInfo {
+  font-size: 40px;
+  line-height: 150%;
+  font-family: "Dancing Script";
+  color: #55551a;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about {
+  font-size: 45px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: 150%;
+  font-family: "Dancing Script";
+  font-weight: 100;
+  color: #e2e2e2;
+}
+
+
+.info-photo-container {
+  height: 45vh;
+  width: 80vw;
+  margin: 144px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.myPic img {
+  height: 45vh;
+  justify-content: space-around;
+  border-radius: 80px;
+}
+
+
+.portfolio {
+  background-color: #65652a;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.portfolio-item {
+  background-color: #949485;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 20px 0; 
+  text-align: center;
+  border-radius: 20px;
+}
+
+.portfolio-item-app {
+  
+  margin: 10px;
+  text-align: center;
+}
+
+
+.portfolio-item-app img {
+  width: 100%; 
+  max-height: 400px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.portfolio-item-app img:hover {
+  transform: scale(1.05);
+  transition: color 0.5s, transform 0.5s;
+}
+
+.portfolio-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.portfolio-item li {
+  margin-bottom: 10px;
+}
+
+
+.list {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  padding-left: 20px; 
+  margin-bottom: 20px;
+  color: #333;
+  background-color: #949485;
+  flex-wrap: wrap;
+  padding: 40px;
+  margin: 20px 0;
+  text-align: left;
+  border-radius: 20px;
+  list-style:circle;
+  line-height: 150%;
+}
+
+.list a {
+  color: #595913;
+  font-style: italic;
+  text-decoration: none; 
+}
+
+.list a:hover{
+  color: #cfcfcf;
+  font-style: italic;
+  text-decoration: underline; 
+}
+
+
+.lets-connect {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  padding-left: 20px; 
+  color: #9b9b82;
+  background-color: #40400f;
+  padding: 40px;
+  text-align: left;
+  line-height: 150%;
+  margin: 100px;
+  margin-bottom: 200px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.lets-connect a {
+  color: #8f8f22; 
+  text-decoration: none;
+}
+
+.lets-connect a:hover {
+  color: #b2b224; 
+  text-decoration: underline; 
+}
+
+
+footer {
+  color: aliceblue;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 20px;
+  background: #121212;
+}
+
+.philosophy {
+  font-size: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: "Dancing Script";
+  font-weight: 100;
+  color: #c8c8c8;
+}
+
+
+
+/* changes for small screens */
+@media (max-width: 768px) {
+
+  .topbar {
+    width: 320px;
+    height: 35px;
+    font-size: 22px;
+  }
+
+  .name .about {
+    font-size: 20px;
+}
+}
