@@ -13,21 +13,28 @@ body {
 }
 
 h2 {
-  font-size: 84px;
+  font-size: clamp(50px, 4.5vw, 84px);
   padding-left: 42px;
   margin-bottom: 0px;
   color: #55551a;
 }
 
-h3 {
-  font-size: 74px;
-  padding-top: 50px;
-  margin-bottom: 5px;
-  margin-top: 10px;
+h3{
+  font-size: clamp(40px, 3.5vw, 74px);
+  padding-top: 4vw;
+  padding-bottom: 5px;
+  margin: 5px;
   text-align: center;
   font-weight: 100;
   color: #c8c8c8;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+  font-size: clamp(20px, 1vw, 44px);
+  text-align: center;
+  color: #ababab;
+  margin: 6px;
 }
 
 
@@ -35,54 +42,44 @@ h3 {
 .topbar {
   background-color: #040404;
   position: fixed;
+  display: flex;
+  justify-content: center;
   top: 20px;
   left: 50%;
-  width: 420px;
-  height: 45px;
-  transform: translateX(-50%);
-  margin: 20px;
+  width: clamp(325px, 30vw, 500px);
+  height: clamp(60px, 9vw, 75px);
+  padding: 10px;
+  
   border-radius: 24px;
-  padding: 20px;
-  font-weight: 50;
-  font-family: "Dancing Script", cursive;
-  font-size: 32px;
   text-align: center;
+
+  transform: translateX(-50%);
   box-shadow: 0 10px 20px rgba(10, 10, 10, 0.2);
   backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
-.topbar ul {
-  padding: 0;
-  margin: 0;
+
+.topbar a {
+  transition: transform 0.3s;
+  padding: clamp(15px,3vw, 20px);
+  font-weight: 50;
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(25px, 2.2vw, 50px);
+  color: #b7b6af;
+  text-decoration: none;
 }
 
-.topbar ul li {
-  display: inline-block;
-  /* Display side by side */
-  padding: 4px 0;
-  list-style-type: none;
+.topbar a:hover {
+  color: #d2cccc;
   transition: color 0.5s, transform 0.5s;
-}
-
-.topbar ul li:hover {
   transform: scale(1.2);
   z-index: 1;
 }
 
-.topbar ul li a {
-  text-decoration: none;
-  color: #b7b6af;
-  padding: 20px;
-  list-style-type: none;
-}
-
-.topbar ul li a:hover {
-  color: #d2cccc;
-}
 
 .myInfo {
-  font-size: 40px;
+  font-size: clamp(35px, 2.5vw, 50px);
   line-height: 150%;
   font-family: "Dancing Script";
   color: #55551a;
@@ -92,7 +89,7 @@ h3 {
 }
 
 .about {
-  font-size: 45px;
+  font-size: clamp(40px, 2.5vw, 50px);
   padding-top: 12px;
   padding-bottom: 12px;
   line-height: 150%;
@@ -143,11 +140,7 @@ h3 {
 
 
 .portfolio-item-app img {
-  width: 100%; 
-  height: auto;
-  max-height: 400px;
-  max-width: 100%;
-  object-fit: cover;
+  height: 45vh;
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s;
@@ -170,7 +163,7 @@ h3 {
 
 .list {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 24px;
+  font-size: clamp(20px, 2vw, 50px);
   padding-left: 20px; 
   margin-bottom: 20px;
   color: #333;
@@ -199,7 +192,7 @@ h3 {
 
 .lets-connect {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 24px;
+  font-size: clamp(20px, 1.5vw, 50px);
   padding-left: 20px; 
   color: #9b9b82;
   background-color: #40400f;
@@ -232,26 +225,10 @@ footer {
 }
 
 .philosophy {
-  font-size: 50px;
+  font-size: clamp(40px, 3vw, 50px);
   padding-top: 12px;
   padding-bottom: 12px;
   font-family: "Dancing Script";
   font-weight: 100;
   color: #c8c8c8;
-}
-
-
-
-/* changes for small screens */
-@media (max-width: 768px) {
-
-  .topbar {
-    width: 320px;
-    height: 35px;
-    font-size: 22px;
-  }
-
-  .name .about {
-    font-size: 20px;
-}
 }
