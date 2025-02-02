@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Portfolio from './components/Portfolio';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
-import './App.css'; // We'll create this next
+import './App.css'; 
 
 function App() {
   return (
